@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Christian Mhel Bae | Licensed Electronics Engineer & Tutor</title>
+<meta name="description" content="Licensed ECE and ECT, QA Tester, and tutor in Electronics, Communications, Mathematics and Programming. Based in Santiago City, Isabela.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b1220;--panel:#111a2c;--line:#22304a;--text:#e6edf7;--mute:#93a1b8;--trace:#4ef0c8;--amber:#ffb454;
+--head:"Chakra Petch",system-ui,sans-serif;--body:"IBM Plex Sans",system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--bg);color:var(--text);font:400 1rem/1.65 var(--body)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:5;background:rgba(11,18,32,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:56px;gap:12px}
+nav b{font:700 1.05rem var(--head);color:var(--trace)}
+nav ul{display:flex;gap:18px;list-style:none;padding:0;overflow-x:auto}
+nav li a{text-decoration:none;color:var(--mute);font-size:.9rem;white-space:nowrap}
+nav li a:hover{color:var(--text)}
+.hero{padding:72px 0 40px;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center}
+h1{font:700 clamp(2.2rem,6vw,3.8rem)/1.05 var(--head)}
+.tag{font:500 1.3rem var(--head);color:var(--amber);margin:14px 0 18px}
+.hero p.lead{color:var(--mute);max-width:46ch}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}
+.chips span{border:1px solid var(--line);background:var(--panel);padding:5px 12px;border-radius:999px;font-size:.85rem}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+.btn{display:inline-block;padding:11px 20px;border-radius:6px;font:700 .95rem var(--head);text-decoration:none;border:1px solid var(--trace);color:var(--trace)}
+.btn.main{background:var(--trace);color:var(--bg)}
+.btn:hover{filter:brightness(1.12)}
+.photo{aspect-ratio:4/5;max-width:300px;justify-self:center;width:100%;border:1px solid var(--line);border-radius:10px;background:var(--panel);display:grid;place-items:center;text-align:center;color:var(--mute);font-size:.9rem;position:relative;overflow:hidden}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.scope{display:block;width:100%;height:90px;margin-top:36px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:linear-gradient(var(--line) 1px,transparent 1px) 0 0/100% 22px,linear-gradient(90deg,var(--line) 1px,transparent 1px) 0 0/22px 100%}
+section{padding:64px 0}
+h2{font:700 clamp(1.6rem,4vw,2.2rem) var(--head);margin-bottom:8px}
+.sub{color:var(--mute);margin-bottom:28px;max-width:60ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px}
+.card h3{font:700 1.1rem var(--head);margin-bottom:6px}
+.card p,.card li{color:var(--mute);font-size:.95rem}
+.card ul{padding-left:18px;margin-top:8px}
+.big{font:700 2.4rem var(--head);color:var(--trace);line-height:1}
+.about{display:grid;grid-template-columns:1.3fr 1fr;gap:32px}
+.tl{list-style:none;padding:0;border-left:2px solid var(--line)}
+.tl li{padding:0 0 18px 18px;position:relative}
+.tl li:before{content:"";position:absolute;left:-6px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--amber)}
+.tl small{color:var(--amber);display:block}
+.price{border-color:var(--line)}
+.price.hot{border-color:var(--trace)}
+.price .amt{font:700 2rem var(--head);color:var(--amber)}
+.price .amt small{font-size:.9rem;color:var(--mute);font-weight:500}
+.note{color:var(--mute);font-size:.88rem;margin-top:14px}
+.quote{border-left:3px solid var(--amber)}
+.quote cite{display:block;margin-top:10px;color:var(--text);font-style:normal;font-size:.9rem}
+form{display:grid;gap:14px}
+label{font-size:.9rem;color:var(--mute);display:grid;gap:6px}
+input,select,textarea{background:var(--bg);border:1px solid var(--line);color:var(--text);border-radius:6px;padding:11px;font:inherit}
+textarea{min-height:120px;resize:vertical}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.links{display:grid;gap:12px;align-content:start}
+.links a{display:block;padding:14px 16px;border:1px solid var(--line);border-radius:8px;background:var(--panel);text-decoration:none}
+.links a:hover{border-color:var(--trace)}
+.links small{display:block;color:var(--mute)}
+footer{border-top:1px solid var(--line);padding:26px 0;color:var(--mute);font-size:.88rem;text-align:center}
+@media(max-width:760px){.hero .wrap,.about{grid-template-columns:1fr}.two{grid-template-columns:1fr}.photo{max-width:220px;order:-1}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>CMB</b>
+<ul><li><a href="#about">About</a></li><li><a href="#wins">Achievements</a></li><li><a href="#services">Services</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#projects">Projects</a></li><li><a href="#reviews">Testimonials</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+
+<header class="hero"><div class="wrap">
+<div>
+<h1>Christian Mhel Bae</h1>
+<p class="tag">Engineering Solutions, Simplified</p>
+<p class="lead">Licensed Electronics Engineer and Technician. I design, solve, and teach, from circuit problems to board exam review.</p>
+<div class="chips"><span>Licensed ECE and ECT</span><span>88.7% ECE Board Rating</span><span>QA Tester at GameOps</span><span>Santiago City, Isabela</span></div>
+<div class="btns"><a class="btn main" href="#booking">Book a session</a><a class="btn" href="cv.pdf" download>Download CV</a></div>
+</div>
+<div class="photo" role="img" aria-label="Photo of Christian Mhel Bae">
+<span>Your photo here<br>(save as photo.jpg)</span>
+<img src="photo.jpg" alt="Christian Mhel Bae" onerror="this.remove()">
+</div>
+</div>
+<div class="wrap"><canvas class="scope" id="scope" aria-hidden="true"></canvas></div>
+</header>
+
+<section id="about"><div class="wrap about">
+<div>
+<h2>About me</h2>
+<p class="sub">Design. Solve. Learn.</p>
+<p>I am a licensed Electronics Engineer (ECE) and Electronics Technician (ECT) from Santiago City, Isabela. I earned my BS in Electronics Engineering at Nueva Vizcaya State University in 2025 and passed the board exam with a rating of 88.7%.</p>
+<p style="margin-top:12px">Today I work as a Quality Assurance tester at GameOps, and I take on engineering projects and tutorials on the side. My approach is simple: break the problem down until it makes sense, then build up from there.</p>
+</div>
+<ul class="tl card" style="list-style:none">
+<li><small>2025</small>Passed the ECE board exam (88.7%) and the ECT exam</li>
+<li><small>2025</small>BSECE, Nueva Vizcaya State University</li>
+<li><small>Now</small>QA Tester at GameOps</li>
+<li style="padding-bottom:0"><small>Now</small>Engineering works and tutorials</li>
+</ul>
+</div></section>
+
+<section id="wins" style="background:var(--panel);border-block:1px solid var(--line)"><div class="wrap">
+<h2>Achievements</h2><p class="sub">Results from the classroom, the board exam, and the quiz stage.</p>
+<div class="grid">
+<div class="card"><div class="big">88.7%</div><h3>ECE Board Rating</h3><p>Licensed Electronics Engineer.</p></div>
+<div class="card"><div class="big">ECT</div><h3>Licensed Technician</h3><p>Electronics Technician license holder.</p></div>
+<div class="card"><div class="big">2x</div><h3>Electronics Elite Champion</h3><p>Back-to-back champion. Former national quizzer.</p></div>
+<div class="card"><div class="big">2x</div><h3>InterScholastic Quizshow</h3><p>Back-to-back 1st Runner Up.</p></div>
+<div class="card"><div class="big">2025</div><h3>BSECE Graduate</h3><p>Nueva Vizcaya State University.</p></div>
+</div></div></section>
+
+<section id="services"><div class="wrap">
+<h2>Tutorial services</h2>
+<p class="sub">Every subject in the latest PRC Table of Specifications for Electronics Engineering. For high school, college, and working professionals. Online, face to face, or both.</p>
+<div class="grid">
+<div class="card"><h3>Mathematics</h3><ul><li>Algebra and Trigonometry</li><li>Analytic Geometry</li><li>Differential and Integral Calculus</li><li>Differential Equations</li><li>Probability and Statistics</li><li>Engineering Mathematics</li></ul></div>
+<div class="card"><h3>Electronics</h3><ul><li>Electronic Devices and Circuits</li><li>Circuit Analysis (DC, AC)</li><li>Digital Electronics and Logic Design</li><li>Microprocessors and Microcontrollers</li><li>Instrumentation and Control Systems</li><li>Signals and Systems</li></ul></div>
+<div class="card"><h3>Communications</h3><ul><li>Analog and Digital Communications</li><li>Transmission Lines and Antennas</li><li>Wireless and Mobile Communications</li><li>Fiber Optics, Microwave, and Satellite</li><li>Broadcast and Data Communications</li></ul></div>
+<div class="card"><h3>General Engineering and Allied</h3><ul><li>Engineering Sciences (Physics, Chemistry)</li><li>Engineering Economics</li><li>Laws, Ethics, and Standards</li><li>Board exam review</li></ul></div>
+<div class="card"><h3>Programming</h3><ul><li>Programming fundamentals</li><li>Microcontroller programming (Arduino and similar)</li><li>Scripting for engineering problems</li><li>Language list: edit this card</li></ul></div>
+</div></div></section>
+
+<section id="pricing" style="background:var(--panel);border-block:1px solid var(--line)"><div class="wrap">
+<h2>Sample pricing</h2><p class="sub">Choose what fits your schedule. Rates are the same online or face to face.</p>
+<div class="grid">
+<div class="card price"><h3>Hourly</h3><div class="amt">₱500 <small>/ hour</small></div><p>One focused hour on a topic or problem set.</p></div>
+<div class="card price hot"><h3>Per session</h3><div class="amt">₱2,500 <small>/ session</small></div><p>An extended session for a full topic or exam practice.</p></div>
+<div class="card price"><h3>Package</h3><div class="amt">₱15,000 <small>/ package</small></div><p>A complete course or review plan, built around your goals.</p></div>
+</div>
+<p class="note">Sample rates. Message me for a custom quote on groups or project work.</p>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<h2>Project portfolio</h2><p class="sub">A few examples of engineering work. Replace these with your own projects.</p>
+<div class="grid">
+<div class="card"><h3>Project title 1</h3><p>Short description: what you built, the tools you used, and the result.</p></div>
+<div class="card"><h3>Project title 2</h3><p>Short description: what you built, the tools you used, and the result.</p></div>
+<div class="card"><h3>Project title 3</h3><p>Short description: what you built, the tools you used, and the result.</p></div>
+</div></div></section>
+
+<section id="reviews" style="background:var(--panel);border-block:1px solid var(--line)"><div class="wrap">
+<h2>Testimonials</h2><p class="sub">What students and clients say. Sample text below, replace with real feedback.</p>
+<div class="grid">
+<div class="card quote"><p>"Sample testimonial: complicated topics finally made sense after a few sessions."</p><cite>Student name, course</cite></div>
+<div class="card quote"><p>"Sample testimonial: clear, patient, and well prepared for every lesson."</p><cite>Student name, school</cite></div>
+<div class="card quote"><p>"Sample testimonial: helped me pass my review with confidence."</p><cite>Client name, role</cite></div>
+</div></div></section>
+
+<section id="booking"><div class="wrap">
+<h2>Book a session</h2><p class="sub">Pick a time that works for you. I will confirm by message.</p>
+<div class="card"><div class="btns" style="margin:0">
+<a class="btn main" href="https://calendly.com/your-link" target="_blank" rel="noopener">Open booking calendar</a>
+<a class="btn" href="#contact">Or send a message</a></div>
+<p class="note">Replace the booking link above with your free Calendly, Cal.com, or Google Calendar booking page.</p></div>
+</div></section>
+
+<section id="contact" style="padding-top:0"><div class="wrap about">
+<div>
+<h2>Contact</h2><p class="sub">Tell me what you need help with.</p>
+<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+<div class="two"><label>Name<input name="name" required autocomplete="name"></label>
+<label>Email<input type="email" name="email" required autocomplete="email"></label></div>
+<div class="two"><label>Subject<select name="subject"><option>Mathematics</option><option>Electronics</option><option>Communications</option><option>Programming</option><option>Board exam review</option><option>Engineering project</option></select></label>
+<label>Mode<select name="mode"><option>Online</option><option>Face to face</option><option>Either</option></select></label></div>
+<label>Message<textarea name="message" required></textarea></label>
+<button class="btn main" type="submit">Send message</button>
+</form>
+</div>
+<div class="links">
+<a href="https://wa.me/639914895624" target="_blank" rel="noopener">WhatsApp / Viber<small>0991 489 5624</small></a>
+<a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook<small>Christian Mhel Bae</small></a>
+<a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn<small>Christian Mhel Bae</small></a>
+<a href="cv.pdf" download>Download CV<small>PDF</small></a>
+</div></div></section>
+
+<footer><div class="wrap">© <span id="yr"></span> Christian Mhel Bae. Santiago City, Isabela, Philippines.</div></footer>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+(function(){
+var c=document.getElementById('scope'),x=c.getContext('2d'),t=0,still=matchMedia('(prefers-reduced-motion:reduce)').matches;
+function size(){var r=c.getBoundingClientRect(),d=devicePixelRatio||1;c.width=r.width*d;c.height=r.height*d;x.setTransform(d,0,0,d,0,0)}
+function draw(){
+var w=c.clientWidth,h=c.clientHeight;x.clearRect(0,0,w,h);
+x.lineWidth=2;x.strokeStyle='#4ef0c8';x.shadowColor='#4ef0c8';x.shadowBlur=8;x.beginPath();
+for(var i=0;i<=w;i+=2){
+var a=i/w*Math.PI*6+t,y=h/2+Math.sin(a)*h*.28+Math.sin(a*3)*h*.1;
+i?x.lineTo(i,y):x.moveTo(i,y)}
+x.stroke();x.shadowBlur=0;
+if(!still){t+=.03;requestAnimationFrame(draw)}}
+size();draw();addEventListener('resize',function(){size();if(still)draw()});
+})();
+</script>
+</body>
+</html>
